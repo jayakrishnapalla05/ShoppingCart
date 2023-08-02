@@ -3,7 +3,10 @@ var totalUser=[];
 if(localStorage.getItem('currUser')){
     document.getElementById('message').style.display='inline';
     document.getElementById('message').setAttribute('class','green')
-    document.getElementById('message').innerText='You already logged In...';
+    document.getElementById('message').innerText='You are already loggedin.Please wait you are redirecting.....';
+    setTimeout(() =>{
+        location.href='../shop';
+    },2000);
 }
 form.addEventListener('submit',(event)=>{
     event.preventDefault();
@@ -48,9 +51,9 @@ form.addEventListener('submit',(event)=>{
         document.getElementById('message').style.display='inline';
         document.getElementById('message').setAttribute('class','red')
         document.getElementById('message').innerText='Error : User does not Exist.You are redirecting to Signup page....'
-       setTimeout(() =>{
-        location.href='../signup';
-       },1500);
+        setTimeout(() =>{
+            location.href='../signup';
+        },1500);
         return;
     }
 
