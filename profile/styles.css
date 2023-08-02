@@ -92,3 +92,54 @@ button{
 #message2{
     display: none;
   }
+
+
+  @media  screen  and (min-width:320px) and (max-width:630px){
+    nav{
+    display: block;
+    color: white;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    background-color: black;
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    font-size: 15px;
+    width: 100%;
+    }
+    nav .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    nav .nav-items a {
+      margin: 0px;
+      padding: 2px;
+  }
+  .container {
+      padding: 40px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+  }
+  .container h1{
+    font-size: 24px;
+  }
+  nav .nav-items{
+    text-align: center;
+  }
+
+
+  button {
+    margin-top: 5px;
+    color: white;
+    background-color: black;
+    width: 110px;
+    height: 26px;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+}
